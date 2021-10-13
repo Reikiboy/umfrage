@@ -1,0 +1,315 @@
+<!doctype html>
+
+
+
+<html lang="en">
+  <head>
+    <title>Survey about your internship</title>
+    <link href="Umfrage.css" rel="stylesheet">
+  </head>
+
+
+<body>
+  <form action="C:\Users\poopy\Desktop\HTML Grundgerüst\Umfrage\pog.html" target="_blank" method="POST">
+  <header>
+    <h1 class="stars"><span><span>WELCOME TO OUR SURVEY</span></span></h1>
+  <div class="info">
+    <p>Please answer all questios honestly.</p>
+  </div>
+   <hr style="width:50%">
+  <div class="questionnumber">
+    <h3>Question 1</h3>
+  </div>
+<div class="question">
+  <p class="question">Where did you complete your internship?</p>
+</div>
+  <input type="text" id="intership" name="intership" class="text-input" title="e.g. Police" required>
+
+<br>
+<br>
+
+<hr style="width:50%">
+
+<div class="questionnumber">
+  <h3>Question 2</h3>
+</div>
+<div class="question">
+  <p>When did your workday start?</p>
+</div>
+  <input type="time" title="e.g. 08:00" required>
+<br>
+<br>
+
+<hr style="width:50%">
+
+
+<div class="questionnumber">
+  <h3>Question 3</h3>
+</div>
+<div class="question">
+  <p>And when did your workday end?</p>
+</div>
+  <input type="time" title="e.g. 16:00" required>
+
+
+
+
+
+<br>
+<br>
+  <hr style="width:50%">
+
+  <div class="questionnumber">
+    <h3>Question 4</h3>
+  </div>
+  <div class="question">
+    <p>How long was your way to work?</p>
+  </div>
+  <div class="labelwithminutes">
+    <input type="number" title="e.g. 30" required id="waytowork" step="5" min="0" max="120">
+      <label id="minutes" for="waytowork">minutes</label>
+    </div>
+
+  <br>
+  <br>
+  <hr style="width: 50%">
+
+<div class="questionnumber">
+    <h3>Question 5</h3>
+</div>
+<div class="question">
+  <p>Would you recommend your internship to others?</p>
+</div>
+
+<section required>
+  <div class="yes">
+    <input type="radio" id="yes" name="recommendation" value="yes">
+  <label for="yes">Yes</label>
+  </div>
+  <div class="no">
+    <input type="radio" id="no" name="recommendation" value="no">
+    <label for="no">No</label>
+  </div>
+</section>
+
+<br>
+<br>
+
+<hr style="width:50%">
+
+
+<div class="questionnumber">
+  <h3>Question 6</h3>
+</div>
+<div class="question">
+  <p>What did you learn and will keep in mind even after your internship?</p>
+</div>
+
+  <textarea id="txtArea" rows="6"  title="e.g. Coding a website, working with children etc." required cols="50"></textarea>
+
+
+  <br>
+  <br>
+
+  <hr style="width:50%">
+
+
+  <div class="questionnumber">
+    <h3>Question 7</h3>
+  </div>
+  <div class="question">
+    <p>What did you <span id="NOT">NOT</span> like or could have been better?</p>
+  </div>
+    <textarea id="txtArea2" rows="4"  title="e.g. having to wake up later" required cols="50"></textarea>
+
+
+    <br>
+    <br>
+
+    <hr style="width:50%">
+
+
+    <div class="questionnumber">
+      <h3>Question 8</h3>
+    </div>
+    <div class="question">
+      <p>What made you choose completing the intership in this branch/company?</p>
+    </div>
+    <textarea id="txtArea2" rows="4"  title="e.g. I always loved working with children" required cols="50"></textarea>
+
+    <br>
+    <br>
+
+    <hr style="width:50%">
+
+
+    <div class="questionnumber">
+      <h3>Question 9</h3>
+    </div>
+    <div class="question">
+      <p>Will you work in the same brach in the future as well?</p>
+      <section required>
+        <div class="yes">
+          <input type="radio" id="yes2" name="recommendation2" value="yes">
+          <label for="yes2">Yes</label>
+        </div>
+        <div class="maybe">
+          <input type="radio" id="maybe2" name="recommendation2" value="maybe">
+          <label for="maybe2">Maybe<label>
+        </div>
+        <div class="no">
+          <input type="radio" id="no2" name="recommendation2" value="no">
+          <label for="no2">No</label>
+        </div>
+      </section>
+
+
+    <br>
+    <br>
+
+    <hr style="width:50%">
+
+
+    <div class="questionnumber">
+      <h3>Question 10</h3>
+    </div>
+    <div class="question">
+      <p>Was there somenthing you created or just want to share?</p>
+    </div>
+  <br>
+    <div class="info2">
+      <label for="sharedimage">You can insert images and videos here: <em>(optional)</em></label>
+    </div>
+  <br>
+    <input type="file" id="sharedimage" title="Choose a file" accept="image/png, image/jpeg, video/mp4">
+<br>
+<br>
+
+
+<section class="personaldata">
+    <hr style="width:80%">
+    <br>
+    <br>
+  <div class="pdhl">
+    <h2 id="pdhl">Now we need some personal data from you:</h2>
+  </div>
+<br>
+<br>
+  <div class="question">
+  </div>
+ <input type="text" title="e.g. Juan"pattern="^[A-Za-z -]+$" placeholder="Name" id="Name" required>
+ <br>
+ <br>
+<hr style="width:20%">
+
+  <div class="question">
+
+  </div>
+  <br>
+<input type="number" placeholder="Age" title="e.g. 16" min="1" max="100" id="age" required>
+<br>
+ <br>
+<hr style="width:20%">
+<br>
+<input type="email" id="email" title="e.g. email@gmail.com" placeholder="E-Mail" required>
+<br>
+<br>
+<hr style="width:20%">
+<br>
+<input type="text" placeholder="School name" title="e.g. Carl-Friedrich-von-Weizsäcker-Gymnasium"  id="schoolname" >
+<br>
+<br>
+<hr style="width:10%">
+<br>
+<input type="tel" id="tel" title="e.g. 04123/929690" pattern="[0-9+/ ]" placeholder="Tel. number">
+<br>
+<br>
+<hr style="width:10%">
+<br>
+<textarea type="text" placeholder="Future job ideas" id="fji" title="e.g. Policeman" style="resize:none" cols="30" rows="3"></textarea>
+<br>
+<br>
+<hr style="width:10%">
+<br>
+
+<input type="number" id="money" placeholder="Monthly income" title="e.g. 30">
+<label for="money">€</label>
+<br>
+<br>
+<hr style="width:60%">
+
+<div class="questionnumber">
+<h4>Okay you almost did it! In the very end, we want to hear your opinion with a final question.</h4>
+</div>
+
+<div class="question">
+<p>How much did you enjoy participating our survey?</p>
+</div>
+
+<div class="range">
+  <label for="range">No</label>
+<input type="range" list="tickmarks" id="range">
+<label for="range">Yes</label>
+
+<datalist id="tickmarks">
+  <option value="0" label="0%"></option>
+  <option value="10"></option>
+  <option value="20"></option>
+  <option value="30"></option>
+  <option value="40"></option>
+  <option value="50" label="50%"></option>
+  <option value="60"></option>
+  <option value="70"></option>
+  <option value="80"></option>
+  <option value="90"></option>
+  <option value="100" label="100%"></option>
+</datalist>
+</div>
+
+<br>
+<br>
+<hr style="width:50%">
+<br>
+<br>
+<br>
+<input type="submit" id="submit" value="Submit">
+</section>
+
+
+
+</header>
+</form>
+
+<footer class="extrainfo">
+
+<br>
+
+<br>
+<br>
+<br>
+
+<br>
+<br>
+
+<br>
+<hr style="width:80%">
+<br>
+<div id="contact">
+<h3>contact us</h3>
+<br>
+<br>
+<br>
+
+</div>
+<br>
+<div class="fotos">
+    <a href="https://www.instagram.com/_reikiji_" target="_blank"><img src="C:\Users\poopy\Desktop\HTML Grundgerüst\Umfrage\Download.png" id="instagram" title="Instagram"></a>
+    <a href="https://www.backauf.de/" target="_blank"><img src="C:\Users\poopy\Desktop\HTML Grundgerüst\Umfrage\logobackauf.png" id="backauf" title="Backauf Computer GmbH"></a>
+    <a href="https://www.discordapp.com/users/388970778991001600/" target="_blank"><img src="C:\Users\poopy\Desktop\HTML Grundgerüst\Umfrage\Download (1).png" id="discord" title="Discord"></a>
+
+ </div>
+
+  </footer>
+
+</body>
+</html>
